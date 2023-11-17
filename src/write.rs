@@ -34,6 +34,7 @@ use crate::{
 /// }
 /// # Ok(()) }
 /// ```
+#[derive(Clone, Debug)]
 pub struct Writer<W: io::Write> {
     writer: W,
     next_id_code: IdCode,
